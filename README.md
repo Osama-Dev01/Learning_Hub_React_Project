@@ -29,9 +29,7 @@
 |----------------|----------------------------------|
 | React JS        | Frontend framework              |
 | Material UI     | UI Components & Styling         |
-| Axios           | API Requests                    |
-| React Router    | Client-side routing             |
-| Express/Firebase (Optional) | Backend Integration    |
+
 
 ---
 
@@ -45,5 +43,4 @@
 
 ---
 
-## 📦 Project Structure
 
