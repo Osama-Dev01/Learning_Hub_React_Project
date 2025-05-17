@@ -1,12 +1,49 @@
-# React + Vite
+# Learnify 🎓 — Child Learning Content Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Learnify** is a React-based web application designed to help parents manage and assign educational content to their children. The platform allows filtering and assigning content based on **age group**, **class**, and **subject**, enabling a personalized and interactive learning journey.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📁 **Content Management Dashboard**  
+  Easily add, edit, and delete educational content (e.g., videos, PDFs).
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🎯 **Smart Filtering**  
+  Filter content by **category**, **age group**, and **class level**.
+
+- 🧒 **Child-Centric Design**  
+  Built with a clean, colorful, and user-friendly interface ideal for early learners.
+
+- 💻 **Responsive UI**  
+  Fully responsive with **React JS** and **Material UI**, ensuring accessibility on all screen sizes.
+
+- 🔐 **Role-Based Access (Admin/Parent)**  
+  Admins can manage content, categories, and users securely.
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology      | Usage                           |
+|----------------|----------------------------------|
+| React JS        | Frontend framework              |
+| Material UI     | UI Components & Styling         |
+| Axios           | API Requests                    |
+| React Router    | Client-side routing             |
+| Express/Firebase (Optional) | Backend Integration    |
+
+---
+
+## 📸 Screenshots
+
+### 📋 Content Management Panel  
+![Content Management](./assets/Capture.png)
+
+### 🏠 Home Page  
+![Home Page](./src/assets/Capture1.png)
+
+---
+
+## 📦 Project Structure
+
