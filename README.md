@@ -38,7 +38,7 @@
 ## 📸 Screenshots
 
 ### 📋 Content Management Panel  
-![Content Management](./assets/Capture.png)
+![Content Management](https://github.com/Osama-Dev01/Learning_Hub_React_Project/blob/main/src/assets/Capture1.PNG)
 
 ### 🏠 Home Page  
 ![Home Page](https://github.com/Osama-Dev01/Learning_Hub_React_Project/blob/main/src/assets/Capture.PNG)
