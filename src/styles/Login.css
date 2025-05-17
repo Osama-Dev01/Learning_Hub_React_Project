@@ -1,0 +1,282 @@
+/* Login Page Styles */
+:root {
+  --primary-red: #e74c3c;
+  --light-red: #fadbd8;
+  --dark-red: #c0392b;
+  --white: #ffffff;
+  --text-color: #2c3e50;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --3d-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  perspective: 1000px; /* For 3D effects */
+}
+
+.login-left, .login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.login-left {
+  background: linear-gradient(135deg, var(--light-red), var(--primary-red));
+  color: var(--text-color);
+  text-align: center;
+  box-shadow: var(--3d-shadow);
+}
+
+.logo-svg {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+  filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.3));
+}
+
+.logo-svg.logo-hover {
+  transform: scale(1.1) rotate(360deg) translateZ(20px);
+}
+
+.logo-welcome h1 {
+  margin: 15px 0;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-right {
+  background-color: var(--white);
+  transform: translateZ(10px);
+}
+
+.login-form {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background: var(--white);
+  border-radius: 15px;
+  box-shadow: var(--3d-shadow);
+  overflow: hidden;
+  transform: translateZ(20px);
+  border: 1px solid rgba(231, 76, 60, 0.2);
+}
+
+/* Form Decoration Elements - Now with 3D effect */
+.form-decoration {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, var(--light-red), var(--primary-red));
+  opacity: 0.3;
+  z-index: 1;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transform: translateZ(10px);
+}
+
+.top-left {
+  top: -25px;
+  left: -25px;
+  border-radius: 0 0 100% 0;
+  transform: rotate(45deg) translateZ(15px);
+}
+
+.top-right {
+  top: -25px;
+  right: -25px;
+  border-radius: 0 0 0 100%;
+  transform: rotate(-45deg) translateZ(15px);
+}
+
+.bottom-left {
+  bottom: -25px;
+  left: -25px;
+  border-radius: 100% 0 0 0;
+  transform: rotate(-45deg) translateZ(15px);
+}
+
+.bottom-right {
+  bottom: -25px;
+  right: -25px;
+  border-radius: 0 100% 0 0;
+  transform: rotate(45deg) translateZ(15px);
+}
+
+.login-form h2 {
+  text-align: center;
+  color: var(--primary-red);
+  margin-bottom: 30px;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.input-group {
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.1));
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color);
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.05);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  border: 2px solid var(--light-red);
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transform: translateZ(5px);
+}
+
+.input-group input:focus {
+  border-color: var(--primary-red);
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.2), 
+              inset 0 1px 3px rgba(0,0,0,0.1);
+  transform: translateZ(10px);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-red);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transform-style: preserve-3d;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-button:hover {
+  background-color: var(--dark-red);
+  transform: translateY(-3px) translateZ(10px);
+  box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.login-button:active {
+  transform: translateY(1px) translateZ(5px);
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+/* 3D button effect */
+.login-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  transform: translateY(50px);
+  transition: transform 0.3s ease;
+}
+
+.login-button:hover::after {
+  transform: translateY(0);
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-password a {
+  color: var(--primary-red);
+  text-decoration: none;
+  position: relative;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--primary-red);
+  transition: width 0.3s ease;
+  transform: translateZ(5px);
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* 3D floating animation for the whole form */
+@keyframes float {
+  0% { transform: translateY(0px) translateZ(20px); }
+  50% { transform: translateY(-10px) translateZ(25px); }
+  100% { transform: translateY(0px) translateZ(20px); }
+}
+
+.login-form {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    perspective: none;
+  }
+
+  .login-left, .login-right {
+    flex: none;
+    width: 100%;
+    height: 50vh;
+    transform: none;
+  }
+
+  .login-form {
+    padding: 20px;
+    max-width: 90%;
+    animation: none;
+    transform: none;
+  }
+
+  .logo-svg {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .login-button:hover {
+    transform: translateY(-3px);
+  }
+}
