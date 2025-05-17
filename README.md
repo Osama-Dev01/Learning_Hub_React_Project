@@ -41,7 +41,7 @@
 ![Content Management](./assets/Capture.png)
 
 ### 🏠 Home Page  
-![Home Page](./src/assets/Capture1.png)
+![Home Page](https://github.com/Osama-Dev01/Learning_Hub_React_Project/blob/main/src/assets/Capture.PNG)
 
 ---
 
